@@ -121,5 +121,41 @@
 
     </footer>
 
+    <div class="feedback">
+      <form method="post" action="">
+        <fieldset class="form-feedback">
+          <legend class="visually-hidden">Форма обратной связи</legend>
+          <div class="form-feedback-name">
+            <label for="name">Ваше имя:</label>
+            <input type="text" id="name" name="name" placeholder="Имя Фамилия" required>
+          </div>
+          <div class="form-feedback-email">
+            <label for="email">Ваш e-mail:</label>
+            <input type="email" id="email" name="email" placeholder="email@example.com" required>
+          </div>
+          <div class="form-feedback-text">
+            <label for="letter-text">Текст письма:</label>
+            <textarea rows="6" id="letter-text" name="letter-text" placeholder="В свободной форме" required>
+            </textarea>
+          </div>
+        </fieldset>
+        <div class="form-feedback-button button">
+          <input type="submit" value="Отправить">
+        </div>
+      </form>
+      <button class="cross">
+        <img src="img/cross-icon.svg" alt="Закрыть окно">
+      </button>
+    </div>
+
+    <div class="big-map">
+      <a href="#">
+        <img src="img/big-map.jpg" alt="Месторасположение">
+      </a>
+      <button class="cross">
+        <img src="img/cross-icon.svg" alt="Закрыть окно">
+      </button>
+    </div>
+
   </body>
 </html>
