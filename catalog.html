@@ -65,16 +65,75 @@
       <h2 class="page-title">Перформаторы</h2>
 
       <section class="filters">
-        <h3>Фильтр:</h3>
-        <!-- Здесь будет форма -->
+        <p>Фильтр:</p>
+
+        <form method="get" action="https://echo.htmlacademy.ru">
+
+          <fieldset class="price">
+            <legend>Цена:</legend>
+            <div class="straight-block">
+              <div class="straight"></div>
+            </div>
+          </fieldset>
+
+          <fieldset class="producers">
+            <legend>Производители:</legend>
+            <div>
+            <label for="bosch">
+              <input type="checkbox" name="bosch" id="bosch" checked>Bosch
+            </label>
+            </div>
+            <div>
+            <label for="interskol">
+              <input type="checkbox" name="interskol" id="interskol">Интерскол
+            </label>
+            </div>
+            <div>
+            <label for="makita">
+              <input type="checkbox" name="makita" id="makita" checked>Makita
+            </label>
+            </div>
+            <div>
+            <label for="dewalt">
+              <input type="checkbox" name="dewalt" id="dewalt">DeWalt
+            </label>
+            </div>
+            <div>
+            <label for="hitachi">
+              <input type="checkbox" name="hitachi" id="hitachi">Hitachi
+            </label>
+            </div>
+          </fieldset>
+
+          <fieldset class="power">
+            <legend>Питание:</legend>
+            <div>
+            <label for="accumulator">
+              <input type="radio" name="accumulator" id="accumulator">Аккумуляторные
+            </label>
+            </div>
+            <div>
+            <label for="network">
+              <input type="radio" name="network" id="network">Сетевые
+            </label>
+            </div>
+          </fieldset>
+
+          <button class="form-button" type="submit">Показать</button>
+
+        </form>
       </section>
 
       <section class="sorting">
-        <h3>Сортировка:</h3>
-        <!-- Здесь будет форма -->
+        <p>Сортировка:</p>
+        <button class="sorting-item" type="button">По цене</button>
+        <button class="sorting-item" type="button">По типу</button>
+        <button class="sorting-item" type="button">По функционалу</button>
+        <div class="arrow-top"></div>
+        <div class="arrow-bottom"></div>
       </section>
 
-      <section class="sorting">
+      <section class="goods-block">
         <h3 class="visually-hidden">Товары</h3>
         <ul class="goods-list">
 
@@ -139,7 +198,7 @@
               <img src="img/perforator-bosch-bfg-2000.jpg" width="218" height="170"
               alt="Перфоратор BOSCH BFG 3000">
             </p>
-            <p class="goods-item-new">new</p>
+            <div class="goods-item-new"></div>
 
             <!-- По наведении -->
             <div class="hover-buttons">
@@ -191,7 +250,7 @@
               <img src="img/perforator-bosch-bfg-6000.jpg" width="218" height="170"
               alt="Перфоратор BOSCH BFG 3000">
             </p>
-            <p class="goods-item-new">new</p>
+            <div class="goods-item-new"></div>
 
             <!-- По наведении -->
             <div class="hover-buttons">
@@ -243,7 +302,7 @@
               <img src="img/perforator-bosch-bfg-3000.jpg" width="218" height="170"
               alt="Перфоратор BOSCH BFG 3000">
             </p>
-            <p class="goods-item-new">new</p>
+            <div class="goods-item-new"></div>
 
             <!-- По наведении -->
             <div class="hover-buttons">
@@ -317,6 +376,25 @@
           </li>
 
         </ul>
+
+        <ul class="pagination-list">
+          <li class="pagination-item current-pagination-item">1</li>
+          <li class="pagination-item">2</li>
+          <li class="pagination-item">3</li>
+          <li class="pagination-item">Следующая</li>
+        </ul>
+
+      </section>
+
+      <section class="perforator-about text-block">
+        <h2>Пара слов о перфораторах</h2>
+        <p>Перфоратор — универсальный строительный инструмент. Предназначен для
+          сверления и долбления отверстий в кирпиче, бетоне и камне.
+          Существуют электромеханические и пневматические перфораторы.
+          Современные модели могут выполнять функции дрели, шуруповерта
+          и отбойного молотка. В ассортиментном ряду есть выбор «трехрежимников»:
+          в одном устройстве будут совмещены отбойный молоток и ударная дрель.
+        </p>
       </section>
 
     </main>
@@ -379,7 +457,6 @@
         <a href="#" class="button">Оформить заказ</a>
         <button class="button-white">Продолжить покупки</button>
       </div>
-      <button class="cross"></button>
     </div>
 
   </body>
