@@ -19,10 +19,10 @@
       <section class="header-second">
         <h1>Интернет-магазин строительных материалов и инструментов
           для ремонта</h1>
-        <div class="header-contacts">
+        <adress class="header-contacts">
           <span  class="header-contacts-tel">+7(812)555-05-55</span><br>
           г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
-        </div>
+        </adress>
         <ul class="user-buttons">
           <li class="sign-in"><a href="">Войти</a></li>
           <li class="sign-up"><a href="">Регистрация</a></li>
@@ -45,10 +45,9 @@
 
       <div class="cards-block">
         <div class="cards-block-left">
-          <div class="cards-block-item">
+          <div class="cards-block-item goods-item-new">
             <p>Материалы</p>
             <a href="#">На любой вкус</a>
-            <div class="goods-item-new"></div>
           </div>
           <div class="cards-block-item">
             <p>Инструменты</p>
@@ -63,9 +62,14 @@
               <p>Перфораторы</p>
               <p>Настоящие мужские игрушки</p>
             </div>
-            <button class="arrow-left"></button>
-            <button class="arrow-right"></button>
-            <div class="points"></div>
+            <button class="arrow-left">Назад</button>
+            <button class="arrow-right">Вперёд</button>
+            <div class="bullets">
+              <button class="bullets-first">
+              </button>
+              <button class="bullets-second">
+              </button>
+            </div>
             <a class="button" href="catalog.html">Открыть каталог</a>
           </div>
         </div>
@@ -108,10 +112,9 @@
               <button class="goods-item-favorite">В закладки</button>
             </div>
               <!-- По наведении -->
-            <a href="goods-item.html">
+            <a href="#">
               <h3>
-                <span class="goods-category">Перфоратор</span>
-                <span class="goods-item-title">BOSCH BFG 3000</span>
+                Перфоратор BOSCH BFG 3000
               </h3>
               <p class="item-price-del">
                 <del>32500 Р.</del>
@@ -138,8 +141,7 @@
               <!-- По наведении -->
             <a href="goods-item.html">
               <h3>
-                <span class="goods-category">Перфоратор</span>
-                <span class="goods-item-title">BOSCH BFG 3000</span>
+                Перфоратор BOSCH BFG 3000
               </h3>
               <p class="item-price-del">
                 <del>22500 Р.</del>
@@ -165,8 +167,7 @@
               <!-- По наведении -->
             <a href="goods-item.html">
               <h3>
-                <span class="goods-category">Перфоратор</span>
-                <span class="goods-item-title">BOSCH BFG 6000</span>
+                Перфоратор BOSCH BFG 6000
               </h3>
               <p class="item-price-del">
                 <del>30500 Р.</del>
@@ -178,23 +179,22 @@
           </li>
 
           <!-- 4 карточка -->
-          <li class="goods-item">
+          <li class="goods-item goods-item-new">
             <p class="goods-item-image">
               <img src="img/perforator-bosch-bfg-2000.jpg" width="218" height="170"
               alt="Перфоратор BOSCH BFG 3000">
             </p>
-            <div class="goods-item-new"></div>
 
             <!-- По наведении -->
             <div class="hover-buttons">
               <a class="goods-item-buy" href="product-3.html">Купить</a>
               <button class="goods-item-favorite">В закладки</button>
             </div>
+
               <!-- По наведении -->
             <a href="goods-item.html">
               <h3>
-                <span class="goods-category">Перфоратор</span>
-                <span class="goods-item-title">BOSCH BFG 2000</span>
+                Перфоратор BOSCH BFG 2000
               </h3>
               <p class="item-price">
                   12500 Р.
@@ -211,14 +211,14 @@
           <a class="button" href="#">Все производители</a>
         </div>
         <ul class="producers-list">
-            <li class="producers-item"><img src="img/company-logo-bosch.png" alt="Bosch"></li>
-            <li class="producers-item"><img src="img/company-logo-makita.png" alt="Makita"></li>
-            <li class="producers-item"><img src="img/company-logo-dewalt.png" alt="DeWalt"></li>
-            <li class="producers-item"><img src="img/company-logo-interskol.png" alt="Интерскол"></li>
-            <li class="producers-item"><img src="img/company-logo-hitachi.png" alt="Hitachi"></li>
-            <li class="producers-item"><img src="img/company-logo-lg.png" alt="LG"></li>
-            <li class="producers-item"><img src="img/company-logo-aeg.png" alt="AEG"></li>
-            <li class="producers-item"><img src="img/company-logo-metabo.png" alt="Metabo"></li>
+            <li class="producers-item"><a href="#"><img src="img/company-logo-bosch.png" alt="Bosch"></a></li>
+            <li class="producers-item"><a href="#"><img src="img/company-logo-makita.png" alt="Makita"></a></li>
+            <li class="producers-item"><a href="#"><img src="img/company-logo-dewalt.png" alt="DeWalt"></a></li>
+            <li class="producers-item"><a href="#"><img src="img/company-logo-interskol.png" alt="Интерскол"></a></li>
+            <li class="producers-item"><a href="#"><img src="img/company-logo-hitachi.png" alt="Hitachi"></a></li>
+            <li class="producers-item"><a href="#"><img src="img/company-logo-lg.png" alt="LG"></a></li>
+            <li class="producers-item"><a href="#"><img src="img/company-logo-aeg.png" alt="AEG"></a></li>
+            <li class="producers-item"><a href="#"><img src="img/company-logo-metabo.png" alt="Metabo"></a></li>
         </ul>
 
       </section>
@@ -290,10 +290,10 @@
         <div class="logo-container">
         <img src="img/logo.svg" width="138" height="22" alt="Логотип Техномарта">
         </div>
-        <div class="footer-contacts">
+        <adress class="footer-contacts">
           г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
           +7(812)555-05-55
-        </div>
+        </adress>
         <ul class="footer-navigation-first">
           <li><a href="company.html">Компания</a></li>
           <li><a href="news.html">Новости</a></li>
