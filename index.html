@@ -4,14 +4,21 @@
     <meta charset="utf-8">
     <title>Техномарт — Интернет-магазин строительных материалов и инструментов
       для ремонта</title>
+      <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700,700i|PT+Sans:400,400i,700,700i&display=swap&subset=cyrillic" rel="stylesheet">
+      <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
   <body>
     <header class="main-header">
       <div class="header-first">
-        <a class="logo-container">
+
+        <a class="logo-container logo-container-top" tabindex="0">
         <img src="img/logo.svg" width="108" height="18" alt="Логотип Техномарта">
         </a>
-        <!-- Форма поиска -->
+        <div class="search-area">
+          <form method="get" action="https://echo.htmlacademy.ru">
+              <input type="search" name="search" id="search" value="Найти:">
+          </form>
+        </div>
         <div class="favorite"><a href="#">Закладки: 0</a></div>
         <div class="shop-basket"><a href="#">Корзина: 0</a></div>
         <div class="make-order"><a href="#">Оформить заказ</a></div>
@@ -20,8 +27,8 @@
         <h1>Интернет-магазин строительных материалов и инструментов
           для ремонта</h1>
         <adress class="header-contacts">
-          <span  class="header-contacts-tel">+7(812)555-05-55</span><br>
-          г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
+          <span>+7(812)555-05-55</span><br>
+          <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
         </adress>
         <ul class="user-buttons">
           <li class="sign-in"><a href="">Войти</a></li>
@@ -45,11 +52,11 @@
 
       <div class="cards-block">
         <div class="cards-block-left">
-          <div class="cards-block-item goods-item-new">
+          <div class="cards-block-materials goods-item-new">
             <p>Материалы</p>
             <a href="#">На любой вкус</a>
           </div>
-          <div class="cards-block-item">
+          <div class="cards-block-instruments">
             <p>Инструменты</p>
             <a href="#">На все случаи</a>
           </div>
@@ -74,15 +81,15 @@
           </div>
         </div>
         <div class="cards-block-right">
-          <div class="cards-block-item">
+          <div class="cards-block-technics">
             <p>Техника</p>
             <a href="#">Для стройки</a>
           </div>
-          <div class="cards-block-item">
+          <div class="cards-block-discount">
             <p>Скидки 50%</p>
             <a href="#">На 350 товаров</a>
           </div>
-          <div class="cards-block-item">
+          <div class="cards-block-delivery">
             <p>Доставка</p>
             <a href="#">Бесплатно</a>
           </div>
@@ -240,6 +247,9 @@
             <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду
               совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его
               на ваш этаж!</p>
+            <div class="services-img">
+              <img src="img/delivery-icon.png">
+            </div>
           </div>
           <div class="services-guarantee">
             <h3>Гарантия</h3>
@@ -247,12 +257,18 @@
               в случае пожара, спровоцированного его возгаранием,  вы всегда
               можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар
               на новый. Дом уж восстановите как-нибудь сами.</p>
+            <div class="services-img">
+              <img src="img/guarantee-icon.png">
+            </div>
           </div>
           <div class="services-guarantee">
             <h3>Кредит</h3>
             <p>Залезть в долговую яму стало проще! Кредитные консультанты
               придут вам на помощь.</p>
             <a href="#" class="button">Отправить заявку</a>
+            <div class="services-img">
+              <img src="img/credit-icon.png">
+            </div>
           </div>
         </div>
       </section>
@@ -287,9 +303,9 @@
     <footer class="main-footer">
 
       <section class="main-footer-top">
-        <div class="logo-container">
+        <a class="logo-container logo-container-bottom">
         <img src="img/logo.svg" width="138" height="22" alt="Логотип Техномарта">
-        </div>
+        </a><br>
         <adress class="footer-contacts">
           г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
           +7(812)555-05-55
@@ -321,14 +337,14 @@
             <li><a class="social-button" href="">Инстаграм</a></li>
           </ul>
         </div>
-        <p class="footer-connect">
-          <b>Обратная связь:</b><br>
+        <p class="footer-bottom-link">
+          <p>Обратная связь:</p>
           <a class="footer-link" href="mailto:mail@htmlacademy.ru">
             mail@htmlacademy.ru</a>
         </p>
-        <p class="footer-developed">
-          <b>Разработано:</b>
-          <a href="https://htmlacademy.ru" class="button">HTML Academy</a>
+        <p class="footer-bottom-link">
+          <p>Разработано —</p>
+          <a class="footer-link" href="https://htmlacademy.ru">HTML Academy</a>
         </p>
       </section>
 

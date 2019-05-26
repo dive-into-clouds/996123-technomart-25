@@ -3,14 +3,20 @@
   <head>
     <meta charset="utf-8">
     <title>Техномарт — Каталог — Инструмент — Перформаторы</title>
+    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700,700i|PT+Sans:400,400i,700,700i&display=swap&subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
   <body>
     <header class="main-header">
       <div class="header-first">
-        <a class="logo-container">
+        <a class="logo-container logo-container-top" tabindex="0">
         <img src="img/logo.svg" width="108" height="18" alt="Логотип Техномарта">
         </a>
-        <!-- Форма поиска -->
+        <div class="search-area">
+          <form method="get" action="https://echo.htmlacademy.ru">
+              <input type="search" name="search" id="search" value="Найти:">
+          </form>
+        </div>
         <div class="favorite"><a href="#">Закладки: 0</a></div>
         <div class="shop-basket"><a href="#">Корзина: 0</a></div>
         <div class="make-order"><a href="#">Оформить заказ</a></div>
@@ -20,14 +26,9 @@
           для ремонта</h1>
         <adress class="header-contacts">
           <span  class="header-contacts-tel">+7(812)555-05-55</span><br>
-          г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
+          <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
         </adress>
-        <ul class="user-buttons">
-          <li class="sign-in"><a href="">Войти</a></li>
-          <li class="sign-up"><a href="">Регистрация</a></li>
-        </ul>
-
-        <section class="user-navigation">
+        <div class="user-navigation">
           <div class="user-navigation-top">
             <a href="profile.html">Равшан Джамшутович</a>
             <a href="profile-exit.html">Выход из профиля</a>
@@ -36,9 +37,7 @@
             <li><a href="my-orders.html">Мои заказы</a></li>
             <li><a href="account.html">Личный кабинет</a></li>
           </ul>
-        </section>
-
-
+        </div>
       </section>
       <nav class="main-navigation">
         <ul class="site-navigation">
@@ -62,7 +61,7 @@
         <li class="breadcrumbs-current">Перфораторы</li>
       </ul>
 
-      <h2 class="page-title">Перформаторы</h2>
+      <h2 class="page-title inner-page-title">Перфораторы</h2>
 
       <section class="filters">
         <p>Фильтр:</p>
@@ -74,6 +73,8 @@
             <div class="straight-block">
               <div class="straight"></div>
             </div>
+            <input type="text" name="left-value">
+            <input type="text" name="right-value">
           </fieldset>
 
           <fieldset class="producers">
@@ -101,6 +102,8 @@
               </li>
             </ul>
           </fieldset>
+          
+          
 
           <fieldset class="power">
             <legend>Питание:</legend>
@@ -123,11 +126,13 @@
 
       <section class="sorting">
         <p>Сортировка:</p>
-        <button class="sorting-item" type="button">По цене</button>
-        <button class="sorting-item" type="button">По типу</button>
-        <button class="sorting-item" type="button">По функционалу</button>
-        <button class="arrow-top"></button>
-        <button class="arrow-bottom"></button>
+        <div class="sorting-block">
+          <a class="sorting-item">По цене</a>
+          <a class="sorting-item">По типу</a>
+          <a class="sorting-item">По функционалу</a>
+          <a class="arrow-top">По возрастанию</a>
+          <a class="arrow-bottom">По убыванию</a>
+        </div>  
       </section>
 
       <section class="goods-block">
@@ -387,7 +392,7 @@
     <footer class="main-footer">
 
       <section class="main-footer-top">
-        <div class="logo-container">
+        <div class="logo-container logo-container-bottom">
         <img src="img/logo.svg" width="138" height="22" alt="Логотип Техномарта">
         </div>
         <adress class="footer-contacts">
@@ -421,14 +426,14 @@
             <li><a class="social-button" href="">Инстаграм</a></li>
           </ul>
         </div>
-        <p class="footer-connect">
-          <b>Обратная связь:</b><br>
+        <p class="footer-bottom-link">
+          <p>Обратная связь:</p>
           <a class="footer-link" href="mailto:mail@htmlacademy.ru">
             mail@htmlacademy.ru</a>
         </p>
-        <p class="footer-developed">
-          <b>Разработано:</b>
-          <a href="https://htmlacademy.ru" class="button">HTML Academy</a>
+        <p class="footer-bottom-link">
+          <p>Разработано:</p>
+          <a class="footer-link" href="https://htmlacademy.ru">HTML Academy</a>
         </p>
       </section>
 
