@@ -11,24 +11,28 @@
   <body>
     <header class="main-header">
       <div class="header-first">
-
-        <a class="header-logo-container" tabindex="0">
-        <img src="img/logo.svg" width="108" height="18" alt="Логотип Техномарта">
-        </a>
-        <div class="search-area">
-          <form method="get" action="https://echo.htmlacademy.ru">
-              <input type="search" name="search" id="search" value="Найти:">
-          </form>
+        <div class="header-first-content">
+          <a class="header-logo-container" tabindex="0">
+            <img src="img/logo.svg" width="108" height="18" alt="Логотип Техномарта">
+          </a>
+          <div class="search-area">
+            <form method="get" action="https://echo.htmlacademy.ru">
+                <input type="search" name="search" id="search" value="Поиск:">
+            </form>
+          </div>
+          <div class="favorite"><a href="#">Закладки: 0</a></div>
+          <div class="shop-basket"><a href="#">Корзина: 0</a></div>
+          <div class="make-order"><a href="#">Оформить заказ</a></div>
         </div>
-        <div class="favorite"><a href="#">Закладки: 0</a></div>
-        <div class="shop-basket"><a href="#">Корзина: 0</a></div>
-        <div class="make-order"><a href="#">Оформить заказ</a></div>
       </div>
       <section class="header-second">
-        <h1>Интернет-магазин строительных материалов и инструментов
-          для ремонта</h1>
+        <div class="header-second-text">
+          <h1>Интернет-магазин строительных материалов<br> и инструментов
+          для ремонта
+          </h1>
+        </div>
         <div class="header-contacts">
-          <span>+7(812)555-05-55</span><br>
+          <span>+7(812)555-05-55</span>
           <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
         </div>
         <ul class="user-buttons">
@@ -49,17 +53,19 @@
       </nav>
     </header>
 
-    <main>
+    <main class="main-block">
 
       <div class="cards-block">
         <div class="cards-block-left">
-          <div class="cards-block-materials goods-item-new">
-            <p>Материалы</p>
-            <a href="#">На любой вкус</a>
-          </div>
-          <div class="cards-block-instruments">
-            <p>Инструменты</p>
-            <a href="#">На все случаи</a>
+          <div class="cards-block-left-top">
+            <div class="cards-block-materials goods-item-new">
+              <p>Материалы</p>
+              <a href="#">На любой вкус</a>
+            </div>
+            <div class="cards-block-instruments">
+              <p>Инструменты</p>
+              <a href="#">На все случаи</a>
+            </div>
           </div>
           <div class="slider">
             <div class="slider-first-text">
@@ -70,15 +76,20 @@
               <p>Перфораторы</p>
               <p>Настоящие мужские игрушки</p>
             </div>
-            <button class="arrow-left">Назад</button>
-            <button class="arrow-right">Вперёд</button>
-            <div class="bullets">
-              <button class="bullets-first">
-              </button>
-              <button class="bullets-second">
-              </button>
+            <div class="arrows">
+              <button class="arrow-left">Назад</button>
+              <button class="arrow-right">Вперёд</button>
             </div>
-            <a class="button" href="catalog.html">Открыть каталог</a>
+            <div class="slider-bottom">
+              <a class="button" href="catalog.html">Открыть каталог</a>
+              <div class="bullets">
+                <button class="bullets-first">
+                </button>
+                <button class="bullets-second">
+                </button>
+              </div>
+            </div>
+            
           </div>
         </div>
         <div class="cards-block-right">
@@ -242,56 +253,58 @@
           <a class="button" href="#">Все производители</a>
         </div>
         <ul class="producers-list">
-            <li class="producers-item"><a href="#"><img src="img/company-logo-bosch.png" alt="Bosch"></a></li>
-            <li class="producers-item"><a href="#"><img src="img/company-logo-makita.png" alt="Makita"></a></li>
-            <li class="producers-item"><a href="#"><img src="img/company-logo-dewalt.png" alt="DeWalt"></a></li>
-            <li class="producers-item"><a href="#"><img src="img/company-logo-interskol.png" alt="Интерскол"></a></li>
-            <li class="producers-item"><a href="#"><img src="img/company-logo-hitachi.png" alt="Hitachi"></a></li>
-            <li class="producers-item"><a href="#"><img src="img/company-logo-lg.png" alt="LG"></a></li>
-            <li class="producers-item"><a href="#"><img src="img/company-logo-aeg.png" alt="AEG"></a></li>
-            <li class="producers-item"><a href="#"><img src="img/company-logo-metabo.png" alt="Metabo"></a></li>
+            <li class="producers-item"><a href="#"><div><img src="img/company-logo-bosch.png" alt="Bosch"></div></a></li>
+            <li class="producers-item"><a href="#"><div><img src="img/company-logo-makita.png" alt="Makita"></div></a></li>
+            <li class="producers-item"><a href="#"><div><img src="img/company-logo-dewalt.png" alt="DeWalt"></div></a></li>
+            <li class="producers-item"><a href="#"><div><img src="img/company-logo-interskol.png" alt="Интерскол"></div></a></li>
+            <li class="producers-item"><a href="#"><div><img src="img/company-logo-hitachi.png" alt="Hitachi"></div></a></li>
+            <li class="producers-item"><a href="#"><div><img src="img/company-logo-lg.png" alt="LG"></div></a></li>
+            <li class="producers-item"><a href="#"><div><img src="img/company-logo-aeg.png" alt="AEG"></div></a></li>
+            <li class="producers-item"><a href="#"><div><img src="img/company-logo-metabo.png" alt="Metabo"></div></a></li>
         </ul>
 
       </section>
 
       <section class="services text-block">
-        <div class="services-header">
-          <h2>Сервисы</h2>
-          <p>Хороший интернет-магазин отличается от плохого не только ценами!
-          Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
-        </div>
-        <div class="services-main">
-          <ul class="services-menu">
-            <li><button class="services-menu-button">Доставка</button></li>
-            <li><button class="services-menu-button">Гарантия</button></li>
-            <li><button class="services-menu-button">Кредит</button></li>
-          </ul>
-          <div class="services-delivery">
-            <h3>Доставка</h3>
-            <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду
-              совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его
-              на ваш этаж!</p>
-            <div class="services-img">
-              <img src="img/delivery-icon.png" alt="Доставка">
-            </div>
+        <div class="services-block">
+          <div class="services-header">
+            <h2>Сервисы</h2>
+            <p>Хороший интернет-магазин отличается от плохого не только ценами!<br>
+            Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
           </div>
-          <div class="services-guarantee">
-            <h3>Гарантия</h3>
-            <p>Если купленный у нас товар поломается или заискрит, а также
-              в случае пожара, спровоцированного его возгаранием,  вы всегда
-              можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар
-              на новый. Дом уж восстановите как-нибудь сами.</p>
-            <div class="services-img">
-              <img src="img/guarantee-icon.png" alt="Гарантия">
+          <div class="services-main">
+            <ul class="services-menu">
+              <li><button class="services-menu-button">Доставка</button></li>
+              <li><button class="services-menu-button">Гарантия</button></li>
+              <li><button class="services-menu-button">Кредит</button></li>
+            </ul>
+            <div class="services-delivery">
+              <h3>Доставка</h3>
+              <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду
+                совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его
+                на ваш этаж!</p>
+              <div class="services-img">
+                <img src="img/delivery-icon.png" alt="Доставка">
+              </div>
             </div>
-          </div>
-          <div class="services-guarantee">
-            <h3>Кредит</h3>
-            <p>Залезть в долговую яму стало проще! Кредитные консультанты
-              придут вам на помощь.</p>
-            <a href="#" class="button">Отправить заявку</a>
-            <div class="services-img">
-              <img src="img/credit-icon.png" alt="Кредит">
+            <div class="services-guarantee">
+              <h3>Гарантия</h3>
+              <p>Если купленный у нас товар поломается или заискрит, а также
+                в случае пожара, спровоцированного его возгаранием,  вы всегда
+                можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар
+                на новый. Дом уж восстановите как-нибудь сами.</p>
+              <div class="services-img">
+                <img src="img/guarantee-icon.png" alt="Гарантия">
+              </div>
+            </div>
+            <div class="services-credit">
+              <h3>Кредит</h3>
+              <p>Залезть в долговую яму стало проще! Кредитные консультанты
+                придут вам на помощь.</p>
+              <a href="#" class="button">Отправить заявку</a>
+              <div class="services-img">
+                <img src="img/credit-icon.png" alt="Кредит">
+              </div>
             </div>
           </div>
         </div>
@@ -301,9 +314,9 @@
         <section class="about-company text-block">
           <h2>Компания «Техномарт»</h2>
           <p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров
-            для ремонта и строительства не оставит равнодушными любителей сэкономить
+            для ремонта<br> и строительства не оставит равнодушными любителей сэкономить
             на гастарбайтерах.</p>
-          <p>Мы можем доставить ваш товар в самые отдаленные точки России!
+          <p>Мы можем доставить ваш товар в самые отдаленные точки России!<br>
             Техномарт работает со многими транспортными компаниями: </p>
           <ul class="transport-company-list">
             <li>Деловые линии</li>
@@ -315,7 +328,7 @@
 
         <section class="contacts text-block">
           <h2>Контакты</h2>
-          <p>Вы можете забрать товар сами, заехав в наш офис:</p>
+          <p>Вы можете забрать товар сами, <br> заехав в наш офис:</p>
           <p><img src="img/map-image.png" width="300" height="158"
             alt="Карта с расположением офиса Техномарта"></p>
           <a class="button" href="#">Заблудились? Напишите нам!</a>
