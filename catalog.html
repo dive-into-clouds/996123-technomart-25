@@ -65,387 +65,491 @@
       </ul>
 
       <h2 class="inner-page-title">Перфораторы</h2>
+      <div class="inner-page-block">
+        <div class="inner-block-left">
+          <section class="filters">
+            <p>Фильтр:</p>
 
-      <section class="filters">
-        <p>Фильтр:</p>
+            <form method="get" action="https://echo.htmlacademy.ru">
 
-        <form method="get" action="https://echo.htmlacademy.ru">
+              <fieldset class="price">
+                <legend>Цена:</legend>
+                <div class="straight-block">
+                  <div class="straight"></div>
+                </div>
+                <input type="text" name="left-value">
+                <input type="text" name="right-value">
+              </fieldset>
 
-          <fieldset class="price">
-            <legend>Цена:</legend>
-            <div class="straight-block">
-              <div class="straight"></div>
-            </div>
-            <input type="text" name="left-value">
-            <input type="text" name="right-value">
-          </fieldset>
-
-          <fieldset class="producers">
-            <legend>Производители:</legend>
-            <ul>
-              <li>
-                <input type="checkbox" name="bosch" id="bosch" checked>
-                <label for="bosch">Bosch</label>
-              </li>
-              <li>
-                <input type="checkbox" name="interskol" id="interskol">
-                <label for="interskol">Интерскол</label>
-              </li>
-              <li>
-                <input type="checkbox" name="makita" id="makita" checked>
-                <label for="makita">Makita</label>
-              </li>
-              <li>
-                <input type="checkbox" name="dewalt" id="dewalt">
-                <label for="dewalt">DeWalt</label>
-              </li>
-              <li>
-                <input type="checkbox" name="hitachi" id="hitachi">
-                <label for="hitachi">Hitachi</label>
-              </li>
-            </ul>
-          </fieldset>
-          
-          
-
-          <fieldset class="power">
-            <legend>Питание:</legend>
-            <ul>
-              <li>
-                <input type="radio" name="accumulator" id="accumulator">
-                <label for="accumulator">Аккумуляторные</label>
-              </li>
-              <li>
-                <input type="radio" name="network" id="network">
-                <label for="network">Сетевые</label>
-              </li>
-            </ul>
-          </fieldset>
-
-          <button class="form-button" type="submit">Показать</button>
-
-        </form>
-      </section>
-
-      <section class="sorting">
-        <p>Сортировка:</p>
-        <div class="sorting-block">
-          <a class="sorting-item" href="#">По цене</a>
-          <a class="sorting-item" href="#">По типу</a>
-          <a class="sorting-item" href="#">По функционалу</a>
-          <a class="arrow-top" href="#">По возрастанию</a>
-          <a class="arrow-bottom" href="#">По убыванию</a>
-        </div>  
-      </section>
-
-      <section class="goods-block">
-        <h3 class="visually-hidden">Товары</h3>
-        <ul class="goods-list">
-
-          <!-- 1 карточка -->
-          <li class="goods-item">
-
-            <!-- При наведении пропадает -->
-            <div class="goods-item-image">
-              <img src="img/perforator-bosch-bfg-3000.jpg" width="218" height="170"
-              alt="Перфоратор BOSCH BFG 3000">
-            </div>
-
-            <!-- При наведении появляется -->
-            <div class="hover-buttons">
-              <a class="goods-item-buy" href="product-1.html">Купить</a>
-              <button class="goods-item-favorite">В закладки</button>
-            </div>
-            
-            <div class="goods-item-text">
-              <h4>
-                Перфоратор BOSCH BFG 3000
-              </h4>
-              <div class="item-price-del">
-                <del>
-                  22500 Р.
-                </del>
-              </div>
-              <a class="item-price" href="#">
-                <ins>
-                  15500 Р.
-                </ins>
-              </a>
-            </div>
-
-          </li>
-
-          <!-- 2 карточка -->
-          <li class="goods-item">
-
-            <!-- При наведении пропадает -->
-            <div class="goods-item-image">
-              <img src="img/perforator-bosch-bfg-6000.jpg" width="218" height="170"
-              alt="Перфоратор BOSCH BFG 3000">
-            </div>
-
-            <!-- При наведении появляется -->
-            <div class="hover-buttons">
-              <a class="goods-item-buy" href="product-2.html">Купить</a>
-              <button class="goods-item-favorite">В закладки</button>
-            </div>
-
-            <div class="goods-item-text">
-              <h4>
-                Перфоратор BOSCH BFG 6000
-              </h4>
-              <div class="item-price-del">
-                <del>
-                  30500 Р.
-                </del>
-              </div>
-              <a class="item-price" href="#">
-                <ins>
-                  25500 Р.
-                </ins>
-              </a>
-            </div>
-
-          </li>
-
-          <!-- 3 карточка -->
-          <li class="goods-item goods-item-new">
-
-            <!-- При наведении пропадает -->
-            <div class="goods-item-image">
-              <img src="img/perforator-bosch-bfg-2000.jpg" width="218" height="170"
-              alt="Перфоратор BOSCH BFG 3000">
-            </div>
-
-            <!-- При наведении появляется -->
-            <div class="hover-buttons">
-              <a class="goods-item-buy" href="product-3.html">Купить</a>
-              <button class="goods-item-favorite">В закладки</button>
-            </div>
-            
-            <div class="goods-item-text">
-              <h4>
-                Перфоратор BOSCH BFG 2000
-              </h4>
-              <a class="item-price" href="#">
-                <ins>
-                  12500 Р.
-                </ins>
-              </a>
-            </div>
-
-          </li>
-
-          <!-- 4 карточка -->
-          <li class="goods-item">
-
-            <!-- При наведении пропадает -->
-            <div class="goods-item-image">
-              <img src="img/perforator-bosch-bfg-3000.jpg" width="218" height="170"
-              alt="Перфоратор BOSCH BFG 3000">
-            </div>
-
-            <!-- При наведении появляется -->
-            <div class="hover-buttons">
-              <a class="goods-item-buy" href="product-4.html">Купить</a>
-              <button class="goods-item-favorite">В закладки</button>
-            </div>
-
-            <div class="goods-item-text">
-              <h4>
-                Перфоратор BOSCH BFG 3000
-              </h4>
-              <div class="item-price-del">
-                <del>
-                  22500 Р.
-                </del>
-              </div>
-              <a class="item-price" href="#">
-                <ins>
-                  15500 Р.
-                </ins>
-              </a>
-            </div>
-
-          </li>
-
-          <!-- 5 карточка -->
-          <li class="goods-item goods-item-new">
-
-            <!-- При наведении пропадает -->
-            <div class="goods-item-image">
-              <img src="img/perforator-bosch-bfg-6000.jpg" width="218" height="170"
-              alt="Перфоратор BOSCH BFG 3000">
-            </div>
-
-            <!-- При наведении появляется -->
-            <div class="hover-buttons">
-              <a class="goods-item-buy" href="product-5.html">Купить</a>
-              <button class="goods-item-favorite">В закладки</button>
-            </div>
+              <fieldset class="producers">
+                <legend>Производители:</legend>
+                <ul>
+                  <li>
+                    <input type="checkbox" name="bosch" id="bosch" checked>
+                    <label for="bosch">Bosch</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" name="interskol" id="interskol">
+                    <label for="interskol">Интерскол</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" name="makita" id="makita" checked>
+                    <label for="makita">Makita</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" name="dewalt" id="dewalt">
+                    <label for="dewalt">DeWalt</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" name="hitachi" id="hitachi">
+                    <label for="hitachi">Hitachi</label>
+                  </li>
+                </ul>
+              </fieldset>
               
-            <div class="goods-item-text">
-              <h4>
-                Перфоратор BOSCH BFG 6000
-              </h4>
-              <div class="item-price-del">
-                <del>
-                  30500 Р.
-                </del>
-              </div>
-              <a class="item-price" href="#">
-                <ins>
-                  25500 Р.
-                </ins>
-              </a>
-            </div>
+              
 
-          </li>
+              <fieldset class="power">
+                <legend>Питание:</legend>
+                <ul>
+                  <li>
+                    <input type="radio" name="accumulator" id="accumulator">
+                    <label for="accumulator">Аккумуляторные</label>
+                  </li>
+                  <li>
+                    <input type="radio" name="network" id="network">
+                    <label for="network">Сетевые</label>
+                  </li>
+                </ul>
+              </fieldset>
 
-          <!-- 6 карточка -->
-          <li class="goods-item">
+              <button class="form-button" type="submit">Показать</button>
 
-            <!-- При наведении пропадает -->
-            <div class="goods-item-image">
-              <img src="img/perforator-bosch-bfg-2000.jpg" width="218" height="170"
-              alt="Перфоратор BOSCH BFG 3000">
-            </div>
+            </form>
+          </section>
+        </div>
+        <div class="inner-block-right">
+          <section class="sorting">
+            <p>Сортировка:</p>
+            <div class="sorting-block">
+              <a class="sorting-item" href="#">По цене</a>
+              <a class="sorting-item" href="#">По типу</a>
+              <a class="sorting-item" href="#">По функционалу</a>
+              <a class="arrow-top" href="#">
+              <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+              width="11px" height="10px" viewBox="0 0 11 10" enable-background="new 0 0 11 10" xml:space="preserve">
+                <polygon fill="#231F20" points="5.5,0 0,10 11,10 "/>
+              </svg>
+              По возрастанию</a>
+              <a class="arrow-bottom" href="#">
+              <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+               width="11px" height="10px" viewBox="0 0 11 10" enable-background="new 0 0 11 10" xml:space="preserve">
+                <polyline fill="#231F20" points="5.5,10 0,0 11,0 "/>
+              </svg>
+              По убыванию</a>
+            </div>  
+          </section>
 
-            <!-- При наведении появляется -->
-            <div class="hover-buttons">
-              <a class="goods-item-buy" href="product-6.html">Купить</a>
-              <button class="goods-item-favorite">В закладки</button>
-            </div>
+          <section class="goods-block">
+            <h3 class="visually-hidden">Товары</h3>
+            <ul class="goods-list">
 
-            <div class="goods-item-text">
-              <h4>
-                Перфоратор BOSCH BFG 2000
-              </h4>
-              <a class="item-price" href="#">
-                <ins>
-                  12500 Р.
-                </ins>
-              </a>
-            </div>
+              <!-- 1 карточка -->
+              <li class="goods-item">
 
-          </li>
+                <!-- При наведении пропадает -->
+                <div class="goods-item-image">
+                  <img src="img/perforator-bosch-bfg-3000.jpg" width="218" height="170"
+                  alt="Перфоратор BOSCH BFG 3000">
+                </div>
 
-          <!-- 7 карточка -->
-          <li class="goods-item">
+                <!-- При наведении появляется -->
+                <div class="hover-buttons">
+                  <a class="goods-item-buy" href="product-1.html">
+                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                    width="15px" height="15px" viewBox="0 0 15 15" enable-background="new 0 0 15 15" xml:space="preserve">
+                      <g>
+                        <circle cx="4.5" cy="13.5" r="1.5"/>
+                        <circle cx="12.5" cy="13.5" r="1.5"/>
+                        <polygon points="15,2 4.07,2 3.648,0 0,0 0,2 2.031,2 4.016,11 15,11 15,9 9.441,9 15,6.951   "/>
+                      </g>
+                    </svg>
+                    <span>Купить</span>
+                  </a>
+                  <button class="goods-item-favorite">В закладки</button>
+                </div>
+                
+                <div class="goods-item-text">
+                  <h4>
+                    Перфоратор BOSCH BFG 3000
+                  </h4>
+                  <div class="item-price-del">
+                    <del>
+                      22500 Р.
+                    </del>
+                  </div>
+                  <a class="item-price" href="#">
+                    <ins>
+                      15500 Р.
+                    </ins>
+                  </a>
+                </div>
 
-            <!-- При наведении пропадает -->
-            <div class="goods-item-image goods-item-new">
-              <img src="img/perforator-bosch-bfg-3000.jpg" width="218" height="170"
-              alt="Перфоратор BOSCH BFG 3000">
-            </div>
+              </li>
 
-            <!-- При наведении появляется -->
-            <div class="hover-buttons">
-              <a class="goods-item-buy" href="product-7.html">Купить</a>
-              <button class="goods-item-favorite">В закладки</button>
-            </div>
+              <!-- 2 карточка -->
+              <li class="goods-item">
 
-            <div class="goods-item-text">
-              <h4>
-                Перфоратор BOSCH BFG 3000
-              </h4>
-              <div class="item-price-del">
-                <del>
-                  22500 Р.
-                </del>
-              </div>
-              <a class="item-price" href="#">
-                <ins>
-                  12500 Р.
-                </ins>
-              </a>
-            </div>
-   
-          </li>
+                <!-- При наведении пропадает -->
+                <div class="goods-item-image">
+                  <img src="img/perforator-bosch-bfg-6000.jpg" width="218" height="170"
+                  alt="Перфоратор BOSCH BFG 3000">
+                </div>
 
-          <!-- 8 карточка -->
-          <li class="goods-item">
+                <!-- При наведении появляется -->
+                <div class="hover-buttons">
+                  <a class="goods-item-buy" href="product-1.html">
+                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                    width="15px" height="15px" viewBox="0 0 15 15" enable-background="new 0 0 15 15" xml:space="preserve">
+                      <g>
+                        <circle cx="4.5" cy="13.5" r="1.5"/>
+                        <circle cx="12.5" cy="13.5" r="1.5"/>
+                        <polygon points="15,2 4.07,2 3.648,0 0,0 0,2 2.031,2 4.016,11 15,11 15,9 9.441,9 15,6.951   "/>
+                      </g>
+                    </svg>
+                    <span>Купить</span>
+                  </a>
+                  <button class="goods-item-favorite">В закладки</button>
+                </div>
 
-            <!-- При наведении пропадает -->
-            <div class="goods-item-image">
-              <img src="img/perforator-bosch-bfg-6000.jpg" width="218" height="170"
-              alt="Перфоратор BOSCH BFG 3000">
-            </div>
+                <div class="goods-item-text">
+                  <h4>
+                    Перфоратор BOSCH BFG 6000
+                  </h4>
+                  <div class="item-price-del">
+                    <del>
+                      30500 Р.
+                    </del>
+                  </div>
+                  <a class="item-price" href="#">
+                    <ins>
+                      25500 Р.
+                    </ins>
+                  </a>
+                </div>
 
-            <!-- При наведении появляется -->
-            <div class="hover-buttons">
-              <a class="goods-item-buy" href="product-8.html">Купить</a>
-              <button class="goods-item-favorite">В закладки</button>
-            </div>
+              </li>
 
-            <div class="goods-item-text">
-              <h4>
-                Перфоратор BOSCH BFG 6000
-              </h4>
-              <div class="item-price-del">
-                <del>
-                  30500 Р.
-                </del>
-              </div>
-              <a class="item-price" href="#">
-                <ins>
-                  25500 Р.
-                </ins>
-              </a>
-            </div>
+              <!-- 3 карточка -->
+              <li class="goods-item goods-item-new">
 
-          </li>
+                <!-- При наведении пропадает -->
+                <div class="goods-item-image">
+                  <img src="img/perforator-bosch-bfg-2000.jpg" width="218" height="170"
+                  alt="Перфоратор BOSCH BFG 3000">
+                </div>
 
-          <!-- 9 карточка -->
-          <li class="goods-item">
+                <!-- При наведении появляется -->
+                <div class="hover-buttons">
+                  <a class="goods-item-buy" href="product-1.html">
+                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                    width="15px" height="15px" viewBox="0 0 15 15" enable-background="new 0 0 15 15" xml:space="preserve">
+                      <g>
+                        <circle cx="4.5" cy="13.5" r="1.5"/>
+                        <circle cx="12.5" cy="13.5" r="1.5"/>
+                        <polygon points="15,2 4.07,2 3.648,0 0,0 0,2 2.031,2 4.016,11 15,11 15,9 9.441,9 15,6.951   "/>
+                      </g>
+                    </svg>
+                    <span>Купить</span>
+                  </a>
+                  <button class="goods-item-favorite">В закладки</button>
+                </div>
+                
+                <div class="goods-item-text">
+                  <h4>
+                    Перфоратор BOSCH BFG 2000
+                  </h4>
+                  <a class="item-price" href="#">
+                    <ins>
+                      12500 Р.
+                    </ins>
+                  </a>
+                </div>
 
-            <!-- При наведении пропадает -->
-            <div class="goods-item-image">
-              <img src="img/perforator-bosch-bfg-2000.jpg" width="218" height="170"
-              alt="Перфоратор BOSCH BFG 3000">
-            </div>
+              </li>
 
-            <!-- При наведении появляется -->
-            <div class="hover-buttons">
-              <a class="goods-item-buy" href="product-9.html">Купить</a>
-              <button class="goods-item-favorite">В закладки</button>
-            </div>
+              <!-- 4 карточка -->
+              <li class="goods-item">
 
-            <div class="goods-item-text">
-              <h4>
-                Перфоратор BOSCH BFG 2000
-              </h4>
-              <a class="item-price" href="#">
-                <ins>
-                  12500 Р.
-                </ins>
-              </a>
-            </div>
+                <!-- При наведении пропадает -->
+                <div class="goods-item-image">
+                  <img src="img/perforator-bosch-bfg-3000.jpg" width="218" height="170"
+                  alt="Перфоратор BOSCH BFG 3000">
+                </div>
 
-          </li>
+                <!-- При наведении появляется -->
+                <div class="hover-buttons">
+                  <a class="goods-item-buy" href="product-1.html">
+                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                    width="15px" height="15px" viewBox="0 0 15 15" enable-background="new 0 0 15 15" xml:space="preserve">
+                      <g>
+                        <circle cx="4.5" cy="13.5" r="1.5"/>
+                        <circle cx="12.5" cy="13.5" r="1.5"/>
+                        <polygon points="15,2 4.07,2 3.648,0 0,0 0,2 2.031,2 4.016,11 15,11 15,9 9.441,9 15,6.951   "/>
+                      </g>
+                    </svg>
+                    <span>Купить</span>
+                  </a>
+                  <button class="goods-item-favorite">В закладки</button>
+                </div>
 
-        </ul>
+                <div class="goods-item-text">
+                  <h4>
+                    Перфоратор BOSCH BFG 3000
+                  </h4>
+                  <div class="item-price-del">
+                    <del>
+                      22500 Р.
+                    </del>
+                  </div>
+                  <a class="item-price" href="#">
+                    <ins>
+                      15500 Р.
+                    </ins>
+                  </a>
+                </div>
 
-        <ul class="pagination-list">
-          <li class="pagination-item current-pagination-item"><a>1</a></li>
-          <li class="pagination-item"><a href="#">2</a></li>
-          <li class="pagination-item"><a href="#">3</a></li>
-          <li class="pagination-item"><a href="#">Следующая</a></li>
-        </ul>
+              </li>
 
-      </section>
+              <!-- 5 карточка -->
+              <li class="goods-item goods-item-new">
 
-      <section class="perforator-about text-block">
-        <h2>Пара слов о перфораторах</h2>
-        <p>Перфоратор — универсальный строительный инструмент. Предназначен для
-          сверления и долбления отверстий в кирпиче, бетоне и камне.
-          Существуют электромеханические и пневматические перфораторы.
-          Современные модели могут выполнять функции дрели, шуруповерта
-          и отбойного молотка. В ассортиментном ряду есть выбор «трехрежимников»:
-          в одном устройстве будут совмещены отбойный молоток и ударная дрель.
-        </p>
-      </section>
+                <!-- При наведении пропадает -->
+                <div class="goods-item-image">
+                  <img src="img/perforator-bosch-bfg-6000.jpg" width="218" height="170"
+                  alt="Перфоратор BOSCH BFG 3000">
+                </div>
 
+                <!-- При наведении появляется -->
+                <div class="hover-buttons">
+                  <a class="goods-item-buy" href="product-1.html">
+                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                    width="15px" height="15px" viewBox="0 0 15 15" enable-background="new 0 0 15 15" xml:space="preserve">
+                      <g>
+                        <circle cx="4.5" cy="13.5" r="1.5"/>
+                        <circle cx="12.5" cy="13.5" r="1.5"/>
+                        <polygon points="15,2 4.07,2 3.648,0 0,0 0,2 2.031,2 4.016,11 15,11 15,9 9.441,9 15,6.951   "/>
+                      </g>
+                    </svg>
+                    <span>Купить</span>
+                  </a>
+                  <button class="goods-item-favorite">В закладки</button>
+                </div>
+                  
+                <div class="goods-item-text">
+                  <h4>
+                    Перфоратор BOSCH BFG 6000
+                  </h4>
+                  <div class="item-price-del">
+                    <del>
+                      30500 Р.
+                    </del>
+                  </div>
+                  <a class="item-price" href="#">
+                    <ins>
+                      25500 Р.
+                    </ins>
+                  </a>
+                </div>
+
+              </li>
+
+              <!-- 6 карточка -->
+              <li class="goods-item">
+
+                <!-- При наведении пропадает -->
+                <div class="goods-item-image">
+                  <img src="img/perforator-bosch-bfg-2000.jpg" width="218" height="170"
+                  alt="Перфоратор BOSCH BFG 3000">
+                </div>
+
+                <!-- При наведении появляется -->
+                <div class="hover-buttons">
+                  <a class="goods-item-buy" href="product-1.html">
+                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                    width="15px" height="15px" viewBox="0 0 15 15" enable-background="new 0 0 15 15" xml:space="preserve">
+                      <g>
+                        <circle cx="4.5" cy="13.5" r="1.5"/>
+                        <circle cx="12.5" cy="13.5" r="1.5"/>
+                        <polygon points="15,2 4.07,2 3.648,0 0,0 0,2 2.031,2 4.016,11 15,11 15,9 9.441,9 15,6.951   "/>
+                      </g>
+                    </svg>
+                    <span>Купить</span>
+                  </a>
+                  <button class="goods-item-favorite">В закладки</button>
+                </div>
+
+                <div class="goods-item-text">
+                  <h4>
+                    Перфоратор BOSCH BFG 2000
+                  </h4>
+                  <a class="item-price" href="#">
+                    <ins>
+                      12500 Р.
+                    </ins>
+                  </a>
+                </div>
+
+              </li>
+
+              <!-- 7 карточка -->
+              <li class="goods-item">
+
+                <!-- При наведении пропадает -->
+                <div class="goods-item-image goods-item-new">
+                  <img src="img/perforator-bosch-bfg-3000.jpg" width="218" height="170"
+                  alt="Перфоратор BOSCH BFG 3000">
+                </div>
+
+                <!-- При наведении появляется -->
+                <div class="hover-buttons">
+                  <a class="goods-item-buy" href="product-1.html">
+                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                    width="15px" height="15px" viewBox="0 0 15 15" enable-background="new 0 0 15 15" xml:space="preserve">
+                      <g>
+                        <circle cx="4.5" cy="13.5" r="1.5"/>
+                        <circle cx="12.5" cy="13.5" r="1.5"/>
+                        <polygon points="15,2 4.07,2 3.648,0 0,0 0,2 2.031,2 4.016,11 15,11 15,9 9.441,9 15,6.951   "/>
+                      </g>
+                    </svg>
+                    <span>Купить</span>
+                  </a>
+                  <button class="goods-item-favorite">В закладки</button>
+                </div>
+
+                <div class="goods-item-text">
+                  <h4>
+                    Перфоратор BOSCH BFG 3000
+                  </h4>
+                  <div class="item-price-del">
+                    <del>
+                      22500 Р.
+                    </del>
+                  </div>
+                  <a class="item-price" href="#">
+                    <ins>
+                      12500 Р.
+                    </ins>
+                  </a>
+                </div>
+       
+              </li>
+
+              <!-- 8 карточка -->
+              <li class="goods-item">
+
+                <!-- При наведении пропадает -->
+                <div class="goods-item-image">
+                  <img src="img/perforator-bosch-bfg-6000.jpg" width="218" height="170"
+                  alt="Перфоратор BOSCH BFG 3000">
+                </div>
+
+                <!-- При наведении появляется -->
+                <div class="hover-buttons">
+                  <a class="goods-item-buy" href="product-1.html">
+                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                    width="15px" height="15px" viewBox="0 0 15 15" enable-background="new 0 0 15 15" xml:space="preserve">
+                      <g>
+                        <circle cx="4.5" cy="13.5" r="1.5"/>
+                        <circle cx="12.5" cy="13.5" r="1.5"/>
+                        <polygon points="15,2 4.07,2 3.648,0 0,0 0,2 2.031,2 4.016,11 15,11 15,9 9.441,9 15,6.951   "/>
+                      </g>
+                    </svg>
+                    <span>Купить</span>
+                  </a>
+                  <button class="goods-item-favorite">В закладки</button>
+                </div>
+
+                <div class="goods-item-text">
+                  <h4>
+                    Перфоратор BOSCH BFG 6000
+                  </h4>
+                  <div class="item-price-del">
+                    <del>
+                      30500 Р.
+                    </del>
+                  </div>
+                  <a class="item-price" href="#">
+                    <ins>
+                      25500 Р.
+                    </ins>
+                  </a>
+                </div>
+
+              </li>
+
+              <!-- 9 карточка -->
+              <li class="goods-item">
+
+                <!-- При наведении пропадает -->
+                <div class="goods-item-image">
+                  <img src="img/perforator-bosch-bfg-2000.jpg" width="218" height="170"
+                  alt="Перфоратор BOSCH BFG 3000">
+                </div>
+
+                <!-- При наведении появляется -->
+                <div class="hover-buttons">
+                  <a class="goods-item-buy" href="product-1.html">
+                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                    width="15px" height="15px" viewBox="0 0 15 15" enable-background="new 0 0 15 15" xml:space="preserve">
+                      <g>
+                        <circle cx="4.5" cy="13.5" r="1.5"/>
+                        <circle cx="12.5" cy="13.5" r="1.5"/>
+                        <polygon points="15,2 4.07,2 3.648,0 0,0 0,2 2.031,2 4.016,11 15,11 15,9 9.441,9 15,6.951   "/>
+                      </g>
+                    </svg>
+                    <span>Купить</span>
+                  </a>
+                  <button class="goods-item-favorite">В закладки</button>
+                </div>
+
+                <div class="goods-item-text">
+                  <h4>
+                    Перфоратор BOSCH BFG 2000
+                  </h4>
+                  <a class="item-price" href="#">
+                    <ins>
+                      12500 Р.
+                    </ins>
+                  </a>
+                </div>
+
+              </li>
+
+            </ul>
+
+            <ul class="pagination-list">
+              <li class="pagination-item current-pagination-item"><a>1</a></li>
+              <li class="pagination-item"><a href="#">2</a></li>
+              <li class="pagination-item"><a href="#">3</a></li>
+              <li class="pagination-item "><a href="#">Следующая</a></li>
+            </ul>
+
+          </section>
+        </div>
+      </div>
+      <div class="perforator-about-block">
+        <section class="perforator-about text-block">
+          <h2>Пара слов о перфораторах</h2>
+          <p>Перфоратор — универсальный строительный инструмент. Предназначен для
+            сверления и долбления отверстий в кирпиче, бетоне и камне.
+            Существуют электромеханические и пневматические перфораторы.
+            Современные модели могут выполнять функции дрели, шуруповерта
+            и отбойного молотка. В ассортиментном ряду есть выбор «трехрежимников»:
+            в одном устройстве будут совмещены отбойный молоток и ударная дрель.
+          </p>
+        </section>
+      </div>
     </main>
 
     <footer class="main-footer">
@@ -453,11 +557,11 @@
       <section class="main-footer-top">
         <div class="main-footer-top-block">
           <div class="main-footer-top-left">
-            <a class="bottom-logo-container">
+            <a class="bottom-logo-container" href="#">
             <img src="img/logo.svg" width="138" height="22" alt="Логотип Техномарта">
             </a><br>
             <div class="footer-contacts">
-              г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
+              г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
               +7(812)555-05-55
             </div>
           </div>
@@ -482,7 +586,7 @@
       <section class="main-footer-bottom">
         <div class="main-footer-bottom-block">
           <div class="footer-copyright">
-            <p>© 2010–2019 Компания «Техномарт»<br>
+            <p>© 2010–2019 Компания «Техномарт»
             Все права защищены
             </p>
           </div>
@@ -495,12 +599,12 @@
           </div>
           <div class="footer-bottom-link">
             <div class="footer-bottom-link-first">
-              <span>Обратная связь:</span><br>
+              <span>Обратная связь:</span>
               <a class="footer-link" href="mailto:mail@htmlacademy.ru">
                 mail@htmlacademy.ru</a>
             </div>
             <div class="footer-bottom-link-second">
-              <span>Разработано —</span><br>
+              <span>Разработано —</span>
               <a class="footer-link" href="https://htmlacademy.ru">HTML Academy</a>
             </div>
           </div>
